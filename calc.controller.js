@@ -37,29 +37,32 @@ var stressApp = angular.module('stressApp',[])
       console.log($scope.lab);
 
 
-      $scope.inputLecture = function() {
+      $scope.inputLecture = function(lecture) {
+      	$scope.lecture = lecture;
       	console.log($scope.lecture);
       };
-      $scope.inputRecitation = function() {
-      	console.log($scope.lecture);
+      $scope.inputRecitation = function(recitation) {
+      	$scope.recitation = recitation;
+      	console.log($scope.recitation);
       };
-      $scope.inputMidterm = function() {
-      	console.log($scope.lecture);
+      $scope.inputMidterm = function(midterm) {
+      	$scope.midterm = midterm;
+      	console.log($scope.midterm);
       };
-      $scope.inputQuiz = function() {
-      	console.log($scope.lecture);
+      $scope.inputQuiz = function(quiz) {
+      	$scope.quiz = quiz;
+      	console.log($scope.quiz);
       };
-      $scope.inputFinal = function() {
-      	console.log($scope.lecture);
+      $scope.inputFinal = function(finals) {
+      	$scope.finals = finals;
+      	console.log($scope.finals);
       };
 
 
       $scope.inputMeeting = function() {
       	console.log($scope.lecture);
       };
-      $scope.inputLecture = function() {
-      	console.log($scope.lecture);
-      };
+
 
 
 
