@@ -28,15 +28,34 @@
             <label><input type="radio" name="optradio" value="employee">Employee (not in school)</label>
         </div>
         <div class="form-group" ng-show="isStudent()">
-            <label for="usr">Lecture: </label>
-            <input type="text" class="form-control" id="usr">
+            <h3>As a student, how stressed are you about the following things?</h3>
+            <label for="lecture">Lecture: </label>
+            <input type="number" class="form-control" id="lecture">
+            <br>
 
-            <label for="usr">Lab: </label>
-            <input type="text" class="form-control" id="usr">
+            <label for="lab">Lab: </label>
+            <input type="number" class="form-control" id="lab">
+            <br>
+
+            <label for="recitation">Recitation: </label>
+            <input type="number" class="form-control" id="recitation">
+            <br>
+
+            <label for="midterm">Midterm: </label>
+            <input type="number" class="form-control" id="midterm">
+            <br>
+
+            <label for="quiz">Quiz: </label>
+            <input type="number" class="form-control" id="quiz">
+            <br>
+
+            <label for="final">Final Exam: </label>
+            <input type="number" class="form-control" id="final">
         </div>
         <div class="form-group" ng-show="isEmployee()">
-            <label for="pwd">Meetings:</label>
-            <input type="password" class="form-control" id="pwd">
+            <h3>As an employee, how stressed are you about the following things?</h3>
+            <label for="meetings">Meetings:</label>
+            <input type="number" class="form-control" id="meetings">
         </div>
 
         <!-- Add shit here -->
