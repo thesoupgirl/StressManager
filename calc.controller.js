@@ -1,11 +1,39 @@
 
 angular.module('stressApp.controllers').controller('Calc', ['$scope', '$http', function($scope, $http){
-		$scope.values= {
-			meetings = "";
-			labs = "";
-			presentations = "";
-			interviews = "";
+		$scope.isStudent = false;
+		$scope.isEmployee = false;
+
+		$scope.isStudent = function(){
+			$scope.isStudent = true;
+			$scope.values = {
+				lectures = "";
+			
+				labs = "";
+				recitations = "";
+				midterms = "";
+				quizes = "";
+				finals = "";
+			};
+
 		};
+
+		$scope.isEmployee = function(){
+			$scope.isEmployee = true;
+			$scope.values={
+				meetings="";
+			};
+		};
+
+		$scope.inputErrorMsg="input error.";
+		$scope.validateInput = function(values){
+			if (values > 10 || values < 0) {
+				this.inputErrorMsg = inputErrorMsg;
+				$scope.values = "";
+			};
+
+
+		};
+
 		$scope.total = 0;
 		$scope.result = 0;
 
@@ -13,7 +41,7 @@ angular.module('stressApp.controllers').controller('Calc', ['$scope', '$http', f
 			$scope.result = total / 4;
 		};
 			
-		};
+};
 
 	
 		
