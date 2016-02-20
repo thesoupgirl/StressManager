@@ -1,11 +1,11 @@
 var stressApp = angular.module('stressApp',[])
-.controller('Calc', ['$scope', '$http', function($scope, $http){
-		$scope.isStudent = false;
-		$scope.isEmployee = false;
-		$scope.radio = '';
+.controller('Calc', function($scope){
+		// $scope.isStudent = false;
+		// $scope.isEmployee = false;
+		// $scope.radio = '';
 		
 
-		$scope.result = 'pass';
+		// $scope.result = 'pass';
   
 // 		$scope.submitResult = function(result) {
 		    
