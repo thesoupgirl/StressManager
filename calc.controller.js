@@ -59,7 +59,7 @@ var stressApp = angular.module('stressApp',[])
       	$scope.quiz = quiz;
       	console.log($scope.quiz);
       };
-      $scope.inputFinal = function(finals) {
+      $scope.inputFinals = function(finals) {
       	$scope.finals = finals;
       	console.log($scope.finals);
       };
