@@ -112,8 +112,19 @@ var stressApp = angular.module('stressApp',[])
 		$scope.finals,
 		$scope.quiz);
 
+		$scope.isInvalidValue(lecture);
+
 		$scope.optiony = optiony;
       }
+
+    $scope.isInvalidValue = function(value) {
+    	if(parseInt(value) < 0) {
+    		return true;
+    	}
+    	else {
+    		return false;
+    	}
+    };
 
 	$scope.calculate = function(){
 		var tmp=0;
