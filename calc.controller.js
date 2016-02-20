@@ -4,6 +4,7 @@ var stressApp = angular.module('stressApp',[])
 		$scope.isEmployee = false;
 		$scope.isEmployedStudent = false;
 		$scope.radioVal = '';
+		$scope.lab = 0;
 		
 
 		$scope.result = 'pass';
