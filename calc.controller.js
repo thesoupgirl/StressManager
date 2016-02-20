@@ -7,59 +7,59 @@ var stressApp = angular.module('stressApp',[])
 
 		$scope.result = 'pass';
   
-		$scope.submitResult = function(result) {
+// 		$scope.submitResult = function(result) {
 		    
-		    alert(result)
-		    console.log(result);
-		 };
+// 		    alert(result)
+// 		    console.log(result);
+// 		 };
 
-		 $scope.change='data';
+// 		 $scope.change='data';
 
-      $scope.getVal=function(){
-	        console.log($scope.radio);
-	        $scope.change=$scope.radio;
-    	}
+//       $scope.getVal=function(){
+// 	        console.log($scope.radio);
+// 	        $scope.change=$scope.radio;
+//     	}
 
-		$scope.isStudent = function(){
-			$scope.isStudent = true;
-			// $scope.values = {
-			// 	lectures = "";
+// 		$scope.isStudent = function(){
+// 			$scope.isStudent = true;
+// 			// $scope.values = {
+// 			// 	lectures = "";
 			
-			// 	labs = "";
-			// 	recitations = "";
-			// 	midterms = "";
-			// 	quizes = "";
-			// 	finals = "";
-			// };
+// 			// 	labs = "";
+// 			// 	recitations = "";
+// 			// 	midterms = "";
+// 			// 	quizes = "";
+// 			// 	finals = "";
+// 			// };
 
-		};
+// 		};
 
-		$scope.isEmployee = function(){
-			$scope.isEmployee = true;
-			// $scope.values={
-			// 	meetings="";
-			// };
-		};
+// 		$scope.isEmployee = function(){
+// 			$scope.isEmployee = true;
+// 			// $scope.values={
+// 			// 	meetings="";
+// 			// };
+// 		};
 
-		$scope.inputErrorMsg="input error.";
-		$scope.validateInput = function(values){
-			if (values > 10 || values < 0) {
-				this.inputErrorMsg = inputErrorMsg;
-				$scope.values = "";
-			};
+// 		$scope.inputErrorMsg="input error.";
+// 		$scope.validateInput = function(values){
+// 			if (values > 10 || values < 0) {
+// 				this.inputErrorMsg = inputErrorMsg;
+// 				$scope.values = "";
+// 			};
 
 
-		};
+// 		};
 
-		$scope.total = 0;
-		$scope.result = 0;
+// 		$scope.total = 0;
+// 		$scope.result = 0;
 
-		$scope.calculate = function(total){
-			$scope.result = total / 4;
-		};
+// 		$scope.calculate = function(total){
+// 			$scope.result = total / 4;
+// 		};
 			
-};
+// };
 
 	
 		
-}]);
+});

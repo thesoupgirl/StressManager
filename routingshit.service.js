@@ -1,5 +1,5 @@
 
-var stressApp = angular.module('stressManagerApp', []);
+var stressApp = angular.module('stressApp', []);
   
 stressApp.config(['$routeProvider',
   function($routeProvider) {
