@@ -129,12 +129,12 @@ var stressApp = angular.module('stressApp',[])
 	$scope.calculate = function(){
 		var tmp=0;
 		for (var i = 0; i < $scope.optiony.length; i++) {
-			if ($scope.optiony[i] > 0) {
+			if (($scope.optiony[i]-0) > 0) {
 				tmp++;
-				$scope.total += $scope.optiony[i];
+				$scope.total += ($scope.optiony[i]-0);
 			}
 		};
-	$scope.result = $scope.total / tmp;
+	$scope.result = ($scope.total-0) / tmp;
 	console.log($scope.result);
 	};
 
