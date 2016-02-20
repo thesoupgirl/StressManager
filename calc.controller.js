@@ -136,7 +136,9 @@ var stressApp = angular.module('stressApp',[])
 			}
 		};
 	$scope.result = parseInt($scope.total) / tmp;
-	console.log($scope.result);
+	console.log("length of array: " + $scope.optiony.length);
+	console.log("tmp: " + tmp);
+	console.log("result after parsing: " + parseInt($scope.result));
 	};
 
 
