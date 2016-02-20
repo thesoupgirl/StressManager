@@ -52,13 +52,13 @@
                 <div class="panel panel-info">
                     <div class="panel-heading"> Are you a...</div>
                         <div class="radio">
-                            <label><input type="radio" ng-model="radioVal" name="optradio" value="student">Student</label>
+                            <label><input type="radio" ng-model="radioVal" name="optradio" value="student" ng-change="change()">Student</label>
                         </div>
                         <div class="radio">
-                            <label><input type="radio" ng-model="radioVal" name="optradio" value="employedStudent">Employed Student</label>
+                            <label><input type="radio" ng-model="radioVal" name="optradio" value="employedStudent" ng-change="change()">Employed Student</label>
                         </div>
                         <div class="radio">
-                            <label><input type="radio" ng-model="radioVal" name="optradio" value="employee">Employee (not in school)</label>
+                            <label><input type="radio" ng-model="radioVal" name="optradio" value="employee" ng-change="change()">Employee (not in school)</label>
             </div>
             <br>
             {{radioVal}}
