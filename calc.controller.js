@@ -11,7 +11,9 @@ var stressApp = angular.module('stressApp',[])
 		$scope.midterm = 0;
 		$scope.finals = 0;
 		$scope.quiz = 0;
-		$scope.optiony = [];
+		$scope.total = 0;
+ 		$scope.result = 0;
+ 		$scope.optiony = [];
 		
 
 		$scope.result = 'pass';
@@ -101,24 +103,24 @@ var stressApp = angular.module('stressApp',[])
       	console.log($scope.meetings);
       };
 
-      $scope.optiony = [$scope.lab,
+      $scope.getArray = function() {
+      	var optiony = new Array($scope.lab,
 		$scope.meetings,
 		$scope.recitation,
 		$scope.lecture,
 		$scope.midterm,
 		$scope.finals,
-		$scope.quiz];
+		$scope.quiz);
 
-
- 	$scope.total = 0;
- 	$scope.result = 0;
+		$scope.optiony = optiony;
+      }
 
 	$scope.calculate = function(){
 		var tmp=0;
-		for (var i = 0; i < optiony.length; i++) {
-			if (optiony[i] > 0) {
+		for (var i = 0; i < $scope.optiony.length; i++) {
+			if ($scope.optiony[i] > 0) {
 				tmp++;
-				$scope.total += optiony[i];
+				$scope.total += $scope.optiony[i];
 			}
 		};
 	$scope.result = total / tmp;
