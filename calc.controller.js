@@ -2,12 +2,15 @@
 angular.module('stressApp.controllers').controller('Calc', ['$scope', '$http', function($scope, $http){
 		$scope.isStudent = false;
 		$scope.isEmployee = false;
+		$scope.radio = '';
+		
 
 		$scope.result = 'pass';
   
 		$scope.submitResult = function(result) {
 		    
 		    alert(result)
+		    console.log(result);
 		 };
 
 		 $scope.change='data';
@@ -19,15 +22,15 @@ angular.module('stressApp.controllers').controller('Calc', ['$scope', '$http', f
 
 		$scope.isStudent = function(){
 			$scope.isStudent = true;
-			$scope.values = {
-				lectures = "";
+			// $scope.values = {
+			// 	lectures = "";
 			
-				labs = "";
-				recitations = "";
-				midterms = "";
-				quizes = "";
-				finals = "";
-			};
+			// 	labs = "";
+			// 	recitations = "";
+			// 	midterms = "";
+			// 	quizes = "";
+			// 	finals = "";
+			// };
 
 		};
 

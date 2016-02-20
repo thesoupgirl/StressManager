@@ -58,17 +58,16 @@
                         <div class="radio">
                             <label><input type="radio" name="optradio" ng-model='radio' ng-value="employedStudent">Employed Student</label>
                         </div>
-                        <div class="radio disabled">
+                        <div class="radio">
                             <label><input type="radio" name="optradio" ng-model='radio' ng-value="employee">Employee (not in school)</label>
                         </div>
-                </div>
-                <div class="panel panel-info">
-                    <div class="form-group" ng-show="isStudent()">
+            </div>
+                <div class="panel panel-info" ng-show="isStudent()">
+                    <div class="form-group">
                         <div class="panel-heading">
                             As a student, how stressed are you about the following things?
                         </div>
                             <h4>Please rate the following from 1-10.  1 being the least stressful and 10 being the most stressful.  If something doesn't apply to you or doesn't stress you out at all, enter in a 0.</h4>
-                        </div>
                         <div class ="container">
                                 <div class="row">
                                     <div class="col-xs-1">
@@ -76,7 +75,7 @@
                                     </div>
 
                                     <div class="col-xs-1">
-                                        <input type="number" class="form-control" id="lecture">
+                                        <input type="number" class="form-control" id="lecture" ng-model='lecture'>
                                         <br>
                                     </div>
                                 </div>
@@ -86,7 +85,7 @@
                                     </div>
 
                                     <div class="col-xs-1">
-                                        <input type="number" class="form-control" id="lab">
+                                        <input type="number" class="form-control" id="lab" ng-model='lab'>
                                         <br>
                                     </div>
                                 </div>
@@ -96,7 +95,7 @@
                                             <label for="recitation">Recitation: </label>
                                         </div>
                                         <div class="col-xs-1">
-                                            <input type="number" class="form-control" id="recitation">
+                                            <input type="number" class="form-control" id="recitation" ng-model='recitation'>
                                             <br>
                                         </div>
                                 </div>
@@ -106,7 +105,7 @@
                                         <label for="midterm">Midterm: </label>
                                     </div>
                                     <div class="col-xs-1">
-                                        <input type="number" class="form-control" id="midterm">
+                                        <input type="number" class="form-control" id="midterm" ng-model='midterm'>
                                         <br>
                                     </div>
                                 </div>
@@ -116,7 +115,7 @@
                                         <label for="quiz">Quiz: </label>
                                     </div>
                                     <div class="col-xs-1">
-                                        <input type="number" class="form-control" id="quiz">
+                                        <input type="number" class="form-control" id="quiz" ng-model='quiz'>
                                         <br>
                                     </div>
                                 </div>
@@ -126,7 +125,7 @@
                                         <label for="final">Final Exam: </label>
                                     </div>
                                     <div class="col-xs-1">
-                                        <input type="number" class="form-control" id="final">
+                                        <input type="number" class="form-control" id="final" ng-model='final'>
                                         <br>
                                     </div>
                                 </div>
@@ -141,13 +140,13 @@
                                             <label for="meetings">Meetings:</label>
                                         </div>
                                         <div class="col-xs-1">
-                                            <input type="number" class="form-control" id="meetings">
+                                            <input type="number" class="form-control" id="meetings" ng-model='meetings'>
                                         </div>
                                     </div>
                             </div>
                         </div>
                     </div>
-                <button type="button" class="btn btn-lg btn-primary" style="text-align: center" align="center">Save and Submit Choices</button>
+                <button type="button" class="btn btn-lg btn-primary" style="text-align: center" align="center" ng-model='submit'>Save and Submit Choices</button>
 
                 <!-- Add shit here -->
                 
