@@ -38,7 +38,6 @@ var stressApp = angular.module('stressApp',[])
 	
 
 
-<<<<<<< HEAD
 	  $scope.inputLecture = function() {
       	console.log($scope.lecture);
       };
@@ -66,14 +65,11 @@ var stressApp = angular.module('stressApp',[])
       	console.log($scope.lecture);
       };
 
-
-=======
       $scope.inputLab = function(lab) {
       	$scope.lab = lab;
       	console.log($scope.lab);
       };
       console.log($scope.lab);
->>>>>>> 6259d8604d1fbf58236f936ebba00c783d9cc64a
 
 
       $scope.inputLecture = function(lecture) {
