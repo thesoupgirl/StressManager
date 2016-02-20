@@ -14,12 +14,12 @@ var stressApp = angular.module('stressApp',[])
 // 		 };
 
 // 		 $scope.change='data';
-	    $scope.$watch('radioVal', $scope.change);
-	    console.log($scope.radioVal);
-	    console.log($scope.change);
-	    console.log("Fuck it");
+
 	    $scope.change = function(){
           console.log($scope.radioVal);
+          if($scope.radioVal === "student") {
+          	$scope.isStudent = true;
+          }
       };
 
       $scope.getVal=function(){
