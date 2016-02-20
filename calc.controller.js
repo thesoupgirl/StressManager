@@ -65,9 +65,43 @@ var stressApp = angular.module('stressApp',[])
       $scope.inputLab = function(lab) {
       	$scope.lab = lab;
       	console.log($scope.lab);
-      }
+      };
       console.log($scope.lab);
 >>>>>>> 6259d8604d1fbf58236f936ebba00c783d9cc64a
+
+
+      $scope.inputLecture = function(lecture) {
+      	$scope.lecture = lecture;
+      	console.log($scope.lecture);
+      };
+
+      $scope.inputRecitation = function(recitation) {
+      	$scope.recitation = recitation;
+      	console.log($scope.recitation);
+      };
+      $scope.inputMidterm = function(midterm) {
+      	$scope.midterm = midterm;
+      	console.log($scope.midterm);
+      };
+      $scope.inputQuiz = function(quiz) {
+      	$scope.quiz = quiz;
+      	console.log($scope.quiz);
+      };
+      $scope.inputFinal = function(finals) {
+      	$scope.finals = finals;
+      	console.log($scope.finals);
+      };
+
+
+      $scope.inputMeeting = function() {
+      	console.log($scope.meeting);
+      };
+
+
+
+
+
+
 
       $scope.submit=function(){
     		console.log("submit putting clicked");
