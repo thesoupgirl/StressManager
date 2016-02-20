@@ -13,6 +13,9 @@ var stressApp = angular.module('stressApp',[])
 		$scope.quiz = 0;
 		$scope.total = 0;
  		$scope.result = 0;
+ 		$scope.work = 0;
+ 		$scope.performance = 0;
+ 		$scope.taxes = 0;
  		$scope.optiony = [];
 		
 
@@ -104,6 +107,21 @@ var stressApp = angular.module('stressApp',[])
       	console.log($scope.meetings);
       };
 
+      $scope.inputWork = function(work) {
+      	$scope.work = work;
+      	console.log($scope.work);
+      }
+
+      $scope.inputPerformance = function(performance) {
+      	$scope.performance = performance;
+      	console.log($scope.performance);
+      }
+
+      $scope.inputTaxes = function(taxes) {
+      	$scope.taxes = taxes;
+      	console.log($scope.taxes);
+      }
+
       $scope.getArray = function() {
       	var optiony = new Array($scope.lab,
 		$scope.meetings,
@@ -111,7 +129,10 @@ var stressApp = angular.module('stressApp',[])
 		$scope.lecture,
 		$scope.midterm,
 		$scope.finals,
-		$scope.quiz);
+		$scope.quiz,
+		$scope.work,
+		$scope.performance,
+		$scope.taxes);
 
 		$scope.isInvalidValue(lecture);
 

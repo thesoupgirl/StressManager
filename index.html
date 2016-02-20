@@ -47,7 +47,7 @@
    
 </nav>
     <div class="container">
-            <body ng-controller="Calc">
+            <body ng-controller="Calc" class="container">
                 <h1> Please tell us a little about you! </h1>
                 <div class="panel panel-info">
                     <div class="panel-heading"> Are you a...</div>
@@ -145,6 +145,30 @@
                                             <input type="number" class="form-control" id="meetings" ng-model="meetings" ng-change="inputMeetings(meetings)">
                                         </div>
                                     </div>
+                                    <div class="row">
+                                        <div class="col-xs-1">
+                                            <label for="work">Work:</label>
+                                        </div>
+                                        <div class="col-xs-1">
+                                            <input type="number" class="form-control" id="work" ng-model="work" ng-change="inputWork(work)">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-1">
+                                            <label for="taxes">Doing Taxes:</label>
+                                        </div>
+                                        <div class="col-xs-1">
+                                            <input type="number" class="form-control" id="taxes" ng-model="taxes" ng-change="inputTaxes(taxes)">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-1">
+                                            <label for="performance-review">Performance Review</label>
+                                        </div>
+                                        <div class="col-xs-1">
+                                            <input type="number" class="form-control" id="performance-review" ng-model="performance" ng-change="inputPerformance(performance)">
+                                        </div>
+                                    </div>
                             </div>
                         </div>
                     </div>
@@ -221,6 +245,31 @@
                                         <br>
                                     </div>
                                 </div>
+
+                                <div class="row">
+                                        <div class="col-xs-1">
+                                            <label for="work">Work:</label>
+                                        </div>
+                                        <div class="col-xs-1">
+                                            <input type="number" class="form-control" id="work" ng-model="work" ng-change="inputWork(work)">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-1">
+                                            <label for="taxes">Doing Taxes:</label>
+                                        </div>
+                                        <div class="col-xs-1">
+                                            <input type="number" class="form-control" id="taxes" ng-model="taxes" ng-change="inputTaxes(taxes)">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-1">
+                                            <label for="performance-review">Performance Review</label>
+                                        </div>
+                                        <div class="col-xs-1">
+                                            <input type="number" class="form-control" id="performance-review" ng-model="performance" ng-change="inputPerformance(performance)">
+                                        </div>
+                                    </div>
                             </div>
                         </div>
                         </div>
