@@ -1,11 +1,11 @@
 var stressApp = angular.module('stressApp',[])
 .controller('Calc', function($scope){
-		// $scope.isStudent = false;
-		// $scope.isEmployee = false;
-		// $scope.radio = '';
+		$scope.isStudent = false;
+		$scope.isEmployee = false;
+		$scope.radio = '';
 		
 
-		// $scope.result = 'pass';
+		$scope.result = 'pass';
   
 // 		$scope.submitResult = function(result) {
 		    
@@ -15,10 +15,10 @@ var stressApp = angular.module('stressApp',[])
 
 // 		 $scope.change='data';
 
-//       $scope.getVal=function(){
-// 	        console.log($scope.radio);
-// 	        $scope.change=$scope.radio;
-//     	}
+      $scope.getVal=function(){
+	        console.log($scope.radio);
+	        $scope.change=$scope.radio;
+    	}
 
 // 		$scope.isStudent = function(){
 // 			$scope.isStudent = true;
