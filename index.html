@@ -60,73 +60,87 @@
                         </div>
                         <div class="radio disabled">
                             <label><input type="radio" name="optradio" value="employee">Employee (not in school)</label>
+                        <div class="panel-heading"> Are you a... </div>
+                        <div class="radio">
+                            <label><input type="radio" name="optradio" ng-model='radio' ng-value="student">Student</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" name="optradio" ng-model='radio' ng-value="employedStudent">Employed Student</label>
+                        </div>
+                        <div class="radio disabled">
+                            <label><input type="radio" name="optradio" ng-model='radio' ng-value="employee">Employee (not in school)</label>
                         </div>
                 </div>
-                <div class="form-group" ng-show="isStudent()">
-                    <h3>As a student, how stressed are you about the following things?</h3>
-                    <h4>Please rate the following from 1-10.  1 being the least stressful and 10 being the most stressful.  If something doesn't apply to you or doesn't stress you out at all, enter in a 0.</h4>
-                    <div class ="container">
-                            <div class="row">
-                                <div class="col-xs-1">
-                                    <label for="lecture">Lecture: </label>
-                                </div>
-
-                                <div class="col-xs-1">
-                                    <input type="number" class="form-control" id="lecture">
-                                    <br>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-1">
-                                    <label for="lab">Lab: </label>
-                                </div>
-
-                                <div class="col-xs-1">
-                                    <input type="number" class="form-control" id="lab">
-                                    <br>
-                                </div>
-                            </div>
-
-                            <div class="row">
+                <div class="panel panel-info">
+                    <div class="form-group" ng-show="isStudent()">
+                        <div class="panel-heading">
+                            As a student, how stressed are you about the following things?
+                        </div>
+                            <h4>Please rate the following from 1-10.  1 being the least stressful and 10 being the most stressful.  If something doesn't apply to you or doesn't stress you out at all, enter in a 0.</h4>
+                        </div>
+                        <div class ="container">
+                                <div class="row">
                                     <div class="col-xs-1">
-                                        <label for="recitation">Recitation: </label>
+                                        <label for="lecture">Lecture: </label>
                                     </div>
+
                                     <div class="col-xs-1">
-                                        <input type="number" class="form-control" id="recitation">
+                                        <input type="number" class="form-control" id="lecture">
                                         <br>
                                     </div>
-                            </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-1">
+                                        <label for="lab">Lab: </label>
+                                    </div>
 
-                            <div class="row">
-                                <div class="col-xs-1">
-                                    <label for="midterm">Midterm: </label>
+                                    <div class="col-xs-1">
+                                        <input type="number" class="form-control" id="lab">
+                                        <br>
+                                    </div>
                                 </div>
-                                <div class="col-xs-1">
-                                    <input type="number" class="form-control" id="midterm">
-                                    <br>
-                                </div>
-                            </div>
 
-                            <div class="row">
-                                <div class="col-xs-1">
-                                    <label for="quiz">Quiz: </label>
+                                <div class="row">
+                                        <div class="col-xs-1">
+                                            <label for="recitation">Recitation: </label>
+                                        </div>
+                                        <div class="col-xs-1">
+                                            <input type="number" class="form-control" id="recitation">
+                                            <br>
+                                        </div>
                                 </div>
-                                <div class="col-xs-1">
-                                    <input type="number" class="form-control" id="quiz">
-                                    <br>
-                                </div>
-                            </div>
 
-                            <div class="row">
-                                <div class="col-xs-1">
-                                    <label for="final">Final Exam: </label>
+                                <div class="row">
+                                    <div class="col-xs-1">
+                                        <label for="midterm">Midterm: </label>
+                                    </div>
+                                    <div class="col-xs-1">
+                                        <input type="number" class="form-control" id="midterm">
+                                        <br>
+                                    </div>
                                 </div>
-                                <div class="col-xs-1">
-                                    <input type="number" class="form-control" id="final">
-                                    <br>
+
+                                <div class="row">
+                                    <div class="col-xs-1">
+                                        <label for="quiz">Quiz: </label>
+                                    </div>
+                                    <div class="col-xs-1">
+                                        <input type="number" class="form-control" id="quiz">
+                                        <br>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-xs-1">
+                                        <label for="final">Final Exam: </label>
+                                    </div>
+                                    <div class="col-xs-1">
+                                        <input type="number" class="form-control" id="final">
+                                        <br>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                    </div>
                         <div class="form-group" ng-show="isEmployee()">
                             <h3>As an employee, how stressed are you about the following things?</h3>
                             <h4>Please rate the following from 1-10.  1 being the least stressful and 10 being the most stressful.  If something doesn't apply to you or doesn't stress you out at all, enter in a 0.</h4>
