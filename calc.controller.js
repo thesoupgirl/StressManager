@@ -106,28 +106,30 @@ var stressApp = angular.module('stressApp',[])
 		$scope.lecture,
 		$scope.midterm,
 		$scope.finals,
-		$scope.quiz]
+		$scope.quiz];
+
 
  	$scope.total = 0;
  	$scope.result = 0;
 
-	// $scope.calculate = function(){
-	// 	var tmp=0;
-	// 	for (var i = 0; i < 7; i++) {
-	// 		if ( > 0) {
-	// 			tmp++;
-	// 			$scope.total +=   ;
-	// 		}
-	// 	};
-	// $scope.result = total / tmp;
-	// console.log($scope.result);
-	// };
+	$scope.calculate = function(){
+		var tmp=0;
+		for (var i = 0; i < options.length; i++) {
+			if (options[i] > 0) {
+				tmp++;
+				$scope.total += options[i];
+			}
+		};
+	$scope.result = total / tmp;
+	console.log($scope.result);
+	};
 
 
 
 
       $scope.submit=function(){
     		console.log("submit putting clicked");
+    		$scope.calculate;
 		};
 
     
