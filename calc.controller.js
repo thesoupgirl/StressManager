@@ -29,6 +29,10 @@ var stressApp = angular.module('stressApp',[])
 	        }
       };
 
+      $scope.inputLab = function() {
+      	console.log($scope.lab);
+      }
+
       $scope.submit=function(){
     		console.log("submit putting clicked");
 		};
