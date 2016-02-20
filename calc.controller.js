@@ -1,5 +1,5 @@
-var stressApp = angular.module('stressApp',[]);
-angular.module('stressApp.controllers').controller('Calc', ['$scope', '$http', function($scope, $http){
+var stressApp = angular.module('stressApp',[])
+.controller('Calc', ['$scope', '$http', function($scope, $http){
 		$scope.isStudent = false;
 		$scope.isEmployee = false;
 		$scope.radio = '';
