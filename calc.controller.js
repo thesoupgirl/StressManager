@@ -29,19 +29,9 @@ var stressApp = angular.module('stressApp',[])
 	        }
       };
 
-     //  $scope.getVal=function(){
-	    //     console.log($scope.radioVal);
-	    //     $scope.change=$scope.radioVal;
-	    //     if($scope.change === "student") {
-	    //     	$scope.isStudent = true;
-	    //     }
-	    //     else if($scope.change === "employedStudent") {
-	    //     	$scope.isEmployedStudent = true;
-	    //     }
-	    //     else if($scope.change === "employee") {
-	    //     	$scope.isEmployee = true;
-	    //     }
-    	// }
+      $scope.submit=function(){
+    		console.log("submit putting clicked");
+		};
 
     
 
