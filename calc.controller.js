@@ -28,10 +28,37 @@ var stressApp = angular.module('stressApp',[])
 	        	$scope.isEmployee = true;
 	        }
       };
+	
 
+
+	  $scope.inputLecture = function() {
+      	console.log($scope.lecture);
+      };
       $scope.inputLab = function() {
       	console.log($scope.lab);
-      }
+      };
+      $scope.inputRecitation = function() {
+      	console.log($scope.lecture);
+      };
+      $scope.inputMidterm = function() {
+      	console.log($scope.lecture);
+      };
+      $scope.inputQuiz = function() {
+      	console.log($scope.lecture);
+      };
+      $scope.inputFinal = function() {
+      	console.log($scope.lecture);
+      };
+
+
+      $scope.inputMeeting = function() {
+      	console.log($scope.lecture);
+      };
+      $scope.inputLecture = function() {
+      	console.log($scope.lecture);
+      };
+
+
 
       $scope.submit=function(){
     		console.log("submit putting clicked");
