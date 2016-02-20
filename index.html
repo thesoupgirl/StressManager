@@ -61,7 +61,6 @@
                             <label><input type="radio" ng-model="radioVal" name="optradio" value="employee" ng-change="change()">Employee (not in school)</label>
             </div>
             <br>
-            {{radioVal}}
                 <div class="panel panel-info" ng-if="isStudent">
                     <div class="panel-heading">
                         <div class="panel-heading">
@@ -134,7 +133,8 @@
                         </div>
                     </div>
                         <div class="form-group" ng-if="isEmployee">
-                            <h3>As an employee, how stressed are you about the following things?</h3>
+                            <div class="panel panel-info">
+                            <div class="panel-heading">As an employee, how stressed are you about the following things?</div>
                             <h4>Please rate the following from 1-10.  1 being the least stressful and 10 being the most stressful.  If something doesn't apply to you or doesn't stress you out at all, enter in a 0.</h4>
                             <div class="container">
                                     <div class="row">
@@ -147,8 +147,10 @@
                                     </div>
                             </div>
                         </div>
+                    </div>
                     <div class="form-group" ng-if="isEmployedStudent">
-                            <h3>As an employee, how stressed are you about the following things?</h3>
+                            <div class="panel panel-info">
+                            <div class="panel-heading">As an employee, how stressed are you about the following things?</div>
                             <h4>Please rate the following from 1-10.  1 being the least stressful and 10 being the most stressful.  If something doesn't apply to you or doesn't stress you out at all, enter in a 0.</h4>
                             <div class="container">
                                     <div class="row">
@@ -160,6 +162,7 @@
                                         </div>
                                     </div>
                             </div>
+                        </div>
                         </div>
                 <button type="button" class="btn btn-lg btn-primary" style="text-align: center" align="center" ng-click="submit()">Save and Submit Choices</button>
 
