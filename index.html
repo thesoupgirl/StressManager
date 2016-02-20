@@ -50,15 +50,17 @@
     <div class="container">
             <body ng-controller="Calc">
                 <h1> Please tell us a little about you! </h1>
-                <p> Are you a...</p>
-                <div class="radio">
-                    <label><input type="radio" name="optradio" value="student">Student</label>
-                </div>
-                <div class="radio">
-                    <label><input type="radio" name="optradio" value="employedStudent">Employed Student</label>
-                </div>
-                <div class="radio disabled">
-                    <label><input type="radio" name="optradio" value="employee">Employee (not in school)</label>
+                <div class="panel panel-info">
+                    <div class="panel-heading"> Are you a...</div>
+                        <div class="radio">
+                            <label><input type="radio" name="optradio" value="student">Student</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" name="optradio" value="employedStudent">Employed Student</label>
+                        </div>
+                        <div class="radio disabled">
+                            <label><input type="radio" name="optradio" value="employee">Employee (not in school)</label>
+                        </div>
                 </div>
                 <div class="form-group" ng-show="isStudent()">
                     <h3>As a student, how stressed are you about the following things?</h3>
@@ -140,7 +142,7 @@
                             </div>
                         </div>
                     </div>
-                <button type="button" class="btn btn-lg btn-primary" style="text-align: center" align="center">Save and Submit Choices</button>
+                <button type="button" class="btn btn-lg btn-primary align-center" style="text-align: center" align="center">Save and Submit Choices</button>
 
                 <!-- Add shit here -->
                 

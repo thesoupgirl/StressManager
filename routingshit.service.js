@@ -14,14 +14,11 @@ stressApp.config(['$routeProvider',
         templateUrl: 'templates/show-google-calendar.html',
         controller: 'ShowGoogleCalendarController'
       }).
-<<<<<<< HEAD
-      
-=======
+
       when('/showStressLevels', {
         templateUrl: 'templates/show-stress-levels.html',
         controller: 'Calc'
       }).
->>>>>>> master
       otherwise({
         redirectTo: '/addUser'
       });
