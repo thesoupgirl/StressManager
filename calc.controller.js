@@ -104,7 +104,13 @@ var stressApp = angular.module('stressApp',[])
       	console.log($scope.meetings);
       };
 
-  
+      $scope.options=[$scope.lab,
+		$scope.meetings,
+		$scope.recitation,
+		$scope.lecture,
+		$scope.midterm,
+		$scope.finals,
+		$scope.quiz]
 
  	$scope.total = 0;
  	$scope.result = 0;
