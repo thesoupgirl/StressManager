@@ -23,6 +23,17 @@ var stressApp = angular.module('stressApp',[])
 	        }
     	}
 
+    	$scope.$watch(
+                    "radioVal",
+                    function handleModelChange( newValue, oldValue ) {
+                        // Ignore null values as we can't render them (using .name).
+                        if ( ! newValue || ! oldValue ) {
+                            return( console.info( "Null value change:", newValue ) );
+                        }
+                        console.log( "Selected shit changed from [", oldValue, "-->", newValue, "]." );
+                    }
+                );
+
 // 		$scope.isStudent = function(){
 // 			$scope.isStudent = true;
 // 			// $scope.values = {
