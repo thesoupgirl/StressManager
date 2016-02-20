@@ -129,7 +129,7 @@ var stressApp = angular.module('stressApp',[])
 
       $scope.submit=function(){
     		console.log("submit putting clicked");
-    		$scope.calculate;
+    		$scope.calculate();
 		};
 
     
