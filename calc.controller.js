@@ -78,6 +78,7 @@ var stressApp = angular.module('stressApp',[])
       $scope.inputLecture = function(lecture) {
       	$scope.lecture = lecture;
       	console.log($scope.lecture);
+      	$scope.isInvalidValue(lecture);
       };
 
       $scope.inputRecitation = function(recitation) {
