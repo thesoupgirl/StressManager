@@ -137,6 +137,7 @@ var stressApp = angular.module('stressApp',[])
 		$scope.isInvalidValue(lecture);
 
 		$scope.optiony = optiony;
+		console.log("array of optiony: " + optiony);
       }
 
     $scope.isInvalidValue = function(value) {
@@ -149,6 +150,7 @@ var stressApp = angular.module('stressApp',[])
     };
 
 	$scope.calculate = function(){
+		$scope.getArray();
 		var tmp=0;
 		for (var i = 0; i < $scope.optiony.length; i++) {
 			if (parseInt($scope.optiony[i]) > 0) {
