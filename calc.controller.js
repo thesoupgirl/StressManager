@@ -103,8 +103,22 @@ var stressApp = angular.module('stressApp',[])
       	console.log($scope.meeting);
       };
 
+  
 
+ 	$scope.total = 0;
+ 	$scope.result = 0;
 
+	$scope.calculate = function(){
+		var tmp=0;
+		for (var i = 0; i < 7; i++) {
+			if ( > 0) {
+				tmp++;
+				$scope.total +=   ;
+			}
+		};
+	$scope.result = total / tmp;
+	console.log($scope.result);
+	};
 
 
 
