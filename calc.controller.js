@@ -11,6 +11,7 @@ var stressApp = angular.module('stressApp',[])
 		$scope.midterm = 0;
 		$scope.finals = 0;
 		$scope.quiz = 0;
+		$scope.options = [];
 		
 
 		$scope.result = 'pass';
