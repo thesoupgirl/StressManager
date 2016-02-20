@@ -5,6 +5,11 @@ var stressApp = angular.module('stressApp',[])
 		$scope.isEmployedStudent = false;
 		$scope.radioVal = '';
 		$scope.lab = 0;
+		$scope.meeting = 0;
+		$scope.recitation = 0;
+		$scope.lecture = 0;
+		$scope.midterm = 0;
+		$scope.finals = 0;
 		
 
 		$scope.result = 'pass';
@@ -60,7 +65,8 @@ var stressApp = angular.module('stressApp',[])
       };
 
 
-      $scope.inputMeeting = function() {
+      $scope.inputMeeting = function(meeting) {
+      	$scope.meeting = meeting;
       	console.log($scope.meeting);
       };
 
