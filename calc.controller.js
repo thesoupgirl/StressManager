@@ -21,10 +21,10 @@ var stressApp = angular.module('stressApp',[])
           if($scope.radioVal === "student") {
           	$scope.isStudent = true;
           }
-          else if($scope.change === "employedStudent") {
+          else if($scope.radioVal === "employedStudent") {
 	        	$scope.isEmployedStudent = true;
 	        }
-	        else if($scope.change === "employee") {
+	        else if($scope.radioVal === "employee") {
 	        	$scope.isEmployee = true;
 	        }
       };
