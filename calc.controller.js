@@ -18,7 +18,7 @@ angular.module('stressApp.controllers').controller('Calc', ['$scope', '$http', f
       $scope.getVal=function(){
 	        console.log($scope.radio);
 	        $scope.change=$scope.radio;
-    	}
+    	};
 
 		$scope.isStudent = function(){
 			$scope.isStudent = true;
