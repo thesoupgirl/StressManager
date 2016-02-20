@@ -36,9 +36,9 @@ angular.module('stressApp.controllers').controller('Calc', ['$scope', '$http', f
 
 		$scope.isEmployee = function(){
 			$scope.isEmployee = true;
-			$scope.values={
-				meetings="";
-			};
+			// $scope.values={
+			// 	meetings="";
+			// };
 		};
 
 		$scope.inputErrorMsg="input error.";
