@@ -1,0 +1,46 @@
+<!-- index.html -->
+    <!DOCTYPE html>
+    <html>
+    <html ng-app="stressApp">
+    <head>
+      <!-- SCROLLS -->
+      <!-- load bootstrap and fontawesome via CDN -->
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+
+      <!-- SPELLS -->
+      <!-- load angular and angular route via CDN -->
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+      <script src="calc.controller.js"></script>
+      <script src="routingshit.service.js"></script>
+    </head>
+    <body ng-controller="Calc">
+        <h1> Please tell us a little about you! </h1>
+        <p> Are you a...</p>
+        <div class="radio">
+            <label><input type="radio" name="optradio" value="student">Student</label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="optradio" value="employedStudent">Employed Student</label>
+        </div>
+        <div class="radio disabled">
+            <label><input type="radio" name="optradio" value="employee">Employee (not in school)</label>
+        </div>
+        <div class="form-group" ng-show="isStudent()">
+            <label for="usr">Lecture: </label>
+            <input type="text" class="form-control" id="usr">
+
+            <label for="usr">Lab: </label>
+            <input type="text" class="form-control" id="usr">
+        </div>
+        <div class="form-group" ng-show="isEmployee()">
+            <label for="pwd">Meetings:</label>
+            <input type="password" class="form-control" id="pwd">
+        </div>
+
+        <!-- Add shit here -->
+        
+
+    </body>
+    </html>
