@@ -2,15 +2,12 @@
 angular.module('stressApp.controllers').controller('Calc', ['$scope', '$http', function($scope, $http){
 		$scope.isStudent = false;
 		$scope.isEmployee = false;
-		$scope.radio = '';
-		
 
 		$scope.result = 'pass';
   
 		$scope.submitResult = function(result) {
 		    
 		    alert(result)
-		    console.log(result);
 		 };
 
 		 $scope.change='data';
@@ -20,30 +17,35 @@ angular.module('stressApp.controllers').controller('Calc', ['$scope', '$http', f
 	        $scope.change=$scope.radio;
     	}
 
+
+    	$scope.student = $scope.isStudent;
+    	$scope.employedStudent = $scope.isEmployedStudent;
+    	$scope.employee = $scope.isEmployee;
+
+
+
 		$scope.isStudent = function(){
 			$scope.isStudent = true;
-			// $scope.values = {
-			// 	lectures = "";
-			
-			// 	labs = "";
-			// 	recitations = "";
-			// 	midterms = "";
-			// 	quizes = "";
-			// 	finals = "";
-			// };
-
+			$scope.values = [{
+				lectures : "",
+				labs : "",
+				recitations : "",
+				midterms : "",
+				quizes : "",
+				finals : ""}
+			];
 		};
 
 		$scope.isEmployee = function(){
 			$scope.isEmployee = true;
-			$scope.values={
-				meetings="";
-			};
+			$scope.values=[{
+				meetings:""}
+			];
 		};
 
 		$scope.inputErrorMsg="input error.";
 		$scope.validateInput = function(values){
-			if (values > 10 || values < 0) {
+			if (!(values < 10 || values > 0) {
 				this.inputErrorMsg = inputErrorMsg;
 				$scope.values = "";
 			};
