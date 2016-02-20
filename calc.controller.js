@@ -30,7 +30,8 @@ var stressApp = angular.module('stressApp',[])
 	        }
       };
 
-      $scope.inputLab = function() {
+      $scope.inputLab = function(lab) {
+      	$scope.lab = lab;
       	console.log($scope.lab);
       }
       console.log($scope.lab);
