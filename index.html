@@ -15,51 +15,62 @@
       <script src="calc.controller.js"></script>
       <script src="routingshit.service.js"></script>
     </head>
-    <body ng-controller="Calc">
-        <h1> Please tell us a little about you! </h1>
-        <p> Are you a...</p>
-        <div class="radio">
-            <label><input type="radio" name="optradio" value="student">Student</label>
-        </div>
-        <div class="radio">
-            <label><input type="radio" name="optradio" value="employedStudent">Employed Student</label>
-        </div>
-        <div class="radio disabled">
-            <label><input type="radio" name="optradio" value="employee">Employee (not in school)</label>
-        </div>
-        <div class="form-group" ng-show="isStudent()">
-            <h3>As a student, how stressed are you about the following things?</h3>
-            <label for="lecture">Lecture: </label>
-            <input type="number" class="form-control" id="lecture">
-            <br>
+    <div class="container">
+            <body ng-controller="Calc">
+                <h1> Please tell us a little about you! </h1>
+                <p> Are you a...</p>
+                <div class="radio">
+                    <label><input type="radio" name="optradio" value="student">Student</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio" value="employedStudent">Employed Student</label>
+                </div>
+                <div class="radio disabled">
+                    <label><input type="radio" name="optradio" value="employee">Employee (not in school)</label>
+                </div>
+                <div class="form-group" ng-show="isStudent()">
+                    <h3>As a student, how stressed are you about the following things?</h3>
+                    <h4>Please rate the following from 1-10.  1 being the least stressful and 10 being the most stressful.</h4>
+                    <div class="row">
+                        <div class="col-xs-1">
+                            <label for="lecture">Lecture: </label>
+                            <input type="number" class="form-control" id="lecture">
+                            <br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-1">
+                            <label for="lab">Lab: </label>
+                            <input type="number" class="form-control" id="lab">
+                            <br>
+                        </div>
+                    </div>
 
-            <label for="lab">Lab: </label>
-            <input type="number" class="form-control" id="lab">
-            <br>
+                    <label for="recitation">Recitation: </label>
+                    <input type="number" class="form-control" id="recitation">
+                    <br>
 
-            <label for="recitation">Recitation: </label>
-            <input type="number" class="form-control" id="recitation">
-            <br>
+                    <label for="midterm">Midterm: </label>
+                    <input type="number" class="form-control" id="midterm">
+                    <br>
 
-            <label for="midterm">Midterm: </label>
-            <input type="number" class="form-control" id="midterm">
-            <br>
+                    <label for="quiz">Quiz: </label>
+                    <input type="number" class="form-control" id="quiz">
+                    <br>
 
-            <label for="quiz">Quiz: </label>
-            <input type="number" class="form-control" id="quiz">
-            <br>
+                    <label for="final">Final Exam: </label>
+                    <input type="number" class="form-control" id="final">
+                </div>
+                <div class="form-group" ng-show="isEmployee()">
+                    <h3>As an employee, how stressed are you about the following things?</h3>
+                    <label for="meetings">Meetings:</label>
+                    <input type="number" class="form-control" id="meetings">
+                </div>
+                <button type="button" class="btn btn-lg btn-primary" style="text-align: center" align="center">Save and Submit Choices</button>
 
-            <label for="final">Final Exam: </label>
-            <input type="number" class="form-control" id="final">
-        </div>
-        <div class="form-group" ng-show="isEmployee()">
-            <h3>As an employee, how stressed are you about the following things?</h3>
-            <label for="meetings">Meetings:</label>
-            <input type="number" class="form-control" id="meetings">
-        </div>
+                <!-- Add shit here -->
+                
 
-        <!-- Add shit here -->
-        
-
-    </body>
+            </body>
+         </div>
     </html>
