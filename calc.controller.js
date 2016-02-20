@@ -123,7 +123,7 @@ var stressApp = angular.module('stressApp',[])
 				$scope.total += $scope.optiony[i];
 			}
 		};
-	$scope.result = total / tmp;
+	$scope.result = $scope.total / tmp;
 	console.log($scope.result);
 	};
 
