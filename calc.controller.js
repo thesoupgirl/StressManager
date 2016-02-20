@@ -3,6 +3,20 @@ angular.module('stressApp.controllers').controller('Calc', ['$scope', '$http', f
 		$scope.isStudent = false;
 		$scope.isEmployee = false;
 
+		$scope.result = 'pass';
+  
+		$scope.submitResult = function(result) {
+		    
+		    alert(result)
+		 };
+
+		 $scope.change='data';
+
+      $scope.getVal=function(){
+	        console.log($scope.radio);
+	        $scope.change=$scope.radio;
+    	}
+
 		$scope.isStudent = function(){
 			$scope.isStudent = true;
 			$scope.values = {
