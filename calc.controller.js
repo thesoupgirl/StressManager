@@ -2,7 +2,7 @@ var stressApp = angular.module('stressApp',[])
 .controller('Calc', function($scope){
 		$scope.isStudent = false;
 		$scope.isEmployee = false;
-		$scope.radio = '';
+		$scope.radioVal = '';
 		
 
 		$scope.result = 'pass';
@@ -16,9 +16,9 @@ var stressApp = angular.module('stressApp',[])
 // 		 $scope.change='data';
 
       $scope.getVal=function(){
-	        console.log($scope.radio);
-	        $scope.change=$scope.radio;
-	        if($scope.change === 'student') {
+	        console.log($scope.radioVal);
+	        $scope.change=$scope.radioVal;
+	        if($scope.change === "student") {
 	        	$scope.isStudent = true;
 	        }
     	}
