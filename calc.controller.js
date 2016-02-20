@@ -18,6 +18,9 @@ var stressApp = angular.module('stressApp',[])
 	    console.log($scope.radioVal);
 	    console.log($scope.change);
 	    console.log("Fuck it");
+	    $scope.change = function(){
+          console.log($scope.radioVal);
+      };
 
       $scope.getVal=function(){
 	        console.log($scope.radioVal);
