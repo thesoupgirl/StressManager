@@ -18,6 +18,9 @@ var stressApp = angular.module('stressApp',[])
       $scope.getVal=function(){
 	        console.log($scope.radio);
 	        $scope.change=$scope.radio;
+	        if($scope.change === 'student') {
+	        	$scope.isStudent = true;
+	        }
     	}
 
 // 		$scope.isStudent = function(){
