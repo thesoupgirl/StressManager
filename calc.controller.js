@@ -21,21 +21,27 @@ var stressApp = angular.module('stressApp',[])
           if($scope.radioVal === "student") {
           	$scope.isStudent = true;
           }
-      };
-
-      $scope.getVal=function(){
-	        console.log($scope.radioVal);
-	        $scope.change=$scope.radioVal;
-	        if($scope.change === "student") {
-	        	$scope.isStudent = true;
-	        }
-	        else if($scope.change === "employedStudent") {
+          else if($scope.change === "employedStudent") {
 	        	$scope.isEmployedStudent = true;
 	        }
 	        else if($scope.change === "employee") {
 	        	$scope.isEmployee = true;
 	        }
-    	}
+      };
+
+     //  $scope.getVal=function(){
+	    //     console.log($scope.radioVal);
+	    //     $scope.change=$scope.radioVal;
+	    //     if($scope.change === "student") {
+	    //     	$scope.isStudent = true;
+	    //     }
+	    //     else if($scope.change === "employedStudent") {
+	    //     	$scope.isEmployedStudent = true;
+	    //     }
+	    //     else if($scope.change === "employee") {
+	    //     	$scope.isEmployee = true;
+	    //     }
+    	// }
 
     
 
