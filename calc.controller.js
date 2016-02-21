@@ -135,8 +135,6 @@ var stressApp = angular.module('stressApp',[])
 		$scope.performance,
 		$scope.taxes);
 
-		$scope.isInvalidValue(lecture);
-
 		$scope.optiony = optiony;
 		console.log("array of optiony: " + optiony);
       }
