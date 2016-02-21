@@ -51,6 +51,7 @@
                 <h1> Please tell us a little about you! </h1>
                 <div class="panel panel-info">
                     <div class="panel-heading"> Are you a...</div>
+                        <div class="container">
                         <div class="radio">
                             <label><input type="radio" ng-model="radioVal" name="optradio" value="student" ng-change="change()">Student</label>
                         </div>
@@ -59,7 +60,8 @@
                         </div>
                         <div class="radio">
                             <label><input type="radio" ng-model="radioVal" name="optradio" value="employee" ng-change="change()">Employee (not in school)</label>
-            </div>
+                        </div>
+                    </div>
             <br>
                 <div class="panel panel-info" ng-if="isStudent">
                     <div class="panel-heading">
