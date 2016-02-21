@@ -275,7 +275,7 @@
                             </div>
                         </div>
                         </div>
-                <div class="alert alert-danger" role="alert" ng-show="isInvalidValue(finals)">
+                <div class="alert alert-danger" role="alert" ng-show="displayError">
                     <strong> Oh noes! </strong> You're entered in an invalid value somewhere.  Good luck finding it.
                 </div>
 
@@ -284,5 +284,5 @@
 
             </body>
          </div>
-         <button type="button" class="btn btn-lg btn-primary" style="text-align: center" align="center" ng-disabled="!anyChanges()"ng-click="submit()">Save and Submit Choices</button>
+         <button type="button" class="btn btn-lg btn-primary" style="text-align: center" align="center" ng-click="submit()">Save and Submit Choices</button>
     </html>

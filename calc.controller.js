@@ -17,6 +17,7 @@ var stressApp = angular.module('stressApp',[])
  		$scope.performance = 0;
  		$scope.taxes = 0;
  		$scope.optiony = [];
+ 		$scope.displayError = false;
 		
 
 		$scope.result = 'pass';
@@ -161,16 +162,19 @@ var stressApp = angular.module('stressApp',[])
 	$scope.calculate = function(){
 		$scope.getArray();
 		var tmp=0;
+		if ($scope.optiony.length < 1) {
+			$scope.displayError = true;
+		}
 		for (var i = 0; i < $scope.optiony.length; i++) {
 			if (parseInt($scope.optiony[i]) > 0) {
 				tmp++;
 				$scope.total += parseInt($scope.optiony[i]);
 			}
 		};
-	$scope.result = parseInt($scope.total) / tmp;
-	console.log("length of array: " + $scope.optiony.length);
-	console.log("tmp: " + tmp);
-	console.log("result after parsing: " + parseInt($scope.result));
+		$scope.result = parseInt($scope.total) / tmp;
+		console.log("length of array: " + $scope.optiony.length);
+		console.log("tmp: " + tmp);
+		console.log("result after parsing: " + parseInt($scope.result));
 	};
 
 
