@@ -149,6 +149,15 @@ var stressApp = angular.module('stressApp',[])
     	}
     };
 
+    $scope.anyChanges = function() {
+    	if($scope.optiony.length < 1) {
+    		return false;
+    	}
+    	else {
+    		return true;
+    	}
+    };
+
 	$scope.calculate = function(){
 		$scope.getArray();
 		var tmp=0;
