@@ -1,0 +1,28 @@
+<html>
+<head>
+</head>
+
+<script >
+	//document.getElementById("dates").innerHTML = sessionStorage.eventInfo;
+	var events = sessionStorage.eventInfo; 
+    if (events.length > 0) {
+            for (i = 0; i < events.length; i++) {
+              var event = events[i];
+              var when = event.start.dateTime;
+              if (!when) {
+                when = event.start.date;
+              }
+              appendPre(event.summary + ' (' + when + ')')
+            }
+          } else {
+            appendPre('No upcoming events found.');
+          }
+      }
+
+
+</script>
+<body>
+	<div id="output" script=></div>
+</body>
+
+</html>
