@@ -159,11 +159,12 @@ var stressApp = angular.module('stressApp',[])
     	}
     };
 
+
 	$scope.calculate = function(){
 		$scope.getArray();
 		var tmp=0;
 		if ($scope.optiony.length < 1) {
-			$scope.displayError = true;
+			$scope.anyChanges();
 		}
 		for (var i = 0; i < $scope.optiony.length; i++) {
 			if (parseInt($scope.optiony[i]) > 0) {
