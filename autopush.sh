@@ -16,5 +16,5 @@ while [ ${#last} -eq 0 ]; do
 	#	mail -s "The Code has been pushed" "campb215@purdue.edu" < out.txt 
 	#fi
 	COUNT=COUNT+2;
-	sleep 120 
+	sleep 10 
 done
